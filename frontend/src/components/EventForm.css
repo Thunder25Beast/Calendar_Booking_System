@@ -1,0 +1,171 @@
+/* Base styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  input[type="text"],
+  input[type="date"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  button[type="submit"] {
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    form {
+      padding: 0.5rem;
+    }
+  
+    input[type="text"],
+    input[type="date"],
+    button[type="submit"] {
+      font-size: 0.875rem;
+      padding: 0.375rem;
+    }
+  }
+  /* EventForm.css */
+.event-form {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.event-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.event-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4F6995; /* Primary color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: #3b5878; /* Darker variant */
+}
+
+/* EventForm.css */
+
+/* Keyframes for slide-in (edit mode) */
+@keyframes slideInEdit {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for fade-in (create mode) */
+@keyframes fadeInCreate {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply animation based on mode */
+.edit-animation {
+  animation: slideInEdit 0.5s ease-out;
+  background-color: #f0f8ff; /* A light background to indicate edit mode */
+}
+
+.create-animation {
+  animation: fadeInCreate 0.5s ease-out;
+  background-color: #ffffff;
+}
+
+/* Rest of your EventForm.css */
+.event-form {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-form:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.event-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.event-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #4F6995; /* Primary color */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.event-form button:hover {
+  background-color: #3b5878; /* Darker variant */
+}
+/* Cancel button styling */
+.cancel-btn {
+  background-color: #ef4444; /* red */
+}
+
+.cancel-btn:hover {
+  background-color: #dc2626;
+}

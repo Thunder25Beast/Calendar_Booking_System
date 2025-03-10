@@ -1,0 +1,74 @@
+/* CalendarView.css */
+
+/* Header styling */
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .calendar-header button {
+    padding: 0.5rem 1rem;
+    background-color: #e5e7eb; /* Gray equivalent */
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .calendar-header button:hover {
+    background-color: #d1d5db;
+  }
+  
+  .calendar-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Calendar grid */
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+  }
+  
+  /* Calendar cells */
+  .calendar-cell {
+    border: 1px solid #d1d5db;
+    padding: 0.5rem;
+    height: 100px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .calendar-cell:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .date-number {
+    font-weight: 600;
+  }
+  
+  /* Custom background classes */
+  .bg-empty {
+    background-color: #ffffff; /* No event */
+  }
+  
+  .bg-partial {
+    background-color: #fde68a; /* Partially booked (yellow equivalent) */
+  }
+  
+  .bg-full {
+    background-color: #fca5a5; /* Fully booked (red equivalent) */
+  }
+  
+  /* Selected date details styling */
+  .selected-date-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    background-color: #f9fafb;
+  }
+  
